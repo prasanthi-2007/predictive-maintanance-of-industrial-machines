@@ -1,0 +1,20 @@
+{
+  "classes": ["Normal", "Bearing Wear", "Overheating", "Hydraulic Pressure Drop", "Rotor Imbalance"],
+  "features": ["operating_hours", "load_percent", "temperature", "vibration", "vibration_freq", "pressure", "acoustic", "rpm"],
+  "feature_importances": {
+    "vibration": 0.2801,
+    "temperature": 0.2719,
+    "acoustic": 0.1549,
+    "vibration_freq": 0.1263,
+    "rpm": 0.0806,
+    "pressure": 0.0775,
+    "load_percent": 0.007,
+    "operating_hours": 0.0018
+  },
+  "metrics": {
+    "accuracy": 0.9997,
+    "f1_score": 0.9997,
+    "rul_mae": 325.92,
+    "r2_score": 0.5477
+  }
+}

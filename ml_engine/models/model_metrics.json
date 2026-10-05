@@ -1,0 +1,119 @@
+{
+  "model_name": "RandomForest Multi-Sensor Predictive Maintenance System",
+  "dataset_size": 15000,
+  "train_size": 12000,
+  "test_size": 3000,
+  "features": [
+    "operating_hours",
+    "load_percent",
+    "temperature",
+    "vibration",
+    "vibration_freq",
+    "pressure",
+    "acoustic",
+    "rpm"
+  ],
+  "classes": [
+    "Bearing Wear",
+    "Hydraulic Pressure Drop",
+    "Normal",
+    "Overheating",
+    "Rotor Imbalance"
+  ],
+  "classification_accuracy": 0.9997,
+  "classification_f1_weighted": 0.9997,
+  "classification_report": {
+    "Bearing Wear": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 244.0
+    },
+    "Hydraulic Pressure Drop": {
+      "precision": 1.0,
+      "recall": 0.9912280701754386,
+      "f1-score": 0.9955947136563876,
+      "support": 114.0
+    },
+    "Normal": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 2309.0
+    },
+    "Overheating": {
+      "precision": 0.9952153110047847,
+      "recall": 1.0,
+      "f1-score": 0.9976019184652278,
+      "support": 208.0
+    },
+    "Rotor Imbalance": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 125.0
+    },
+    "accuracy": 0.9996666666666667,
+    "macro avg": {
+      "precision": 0.999043062200957,
+      "recall": 0.9982456140350877,
+      "f1-score": 0.9986393264243232,
+      "support": 3000.0
+    },
+    "weighted avg": {
+      "precision": 0.9996682615629984,
+      "recall": 0.9996666666666667,
+      "f1-score": 0.999666332132532,
+      "support": 3000.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      244,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      113,
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      0,
+      2309,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      208,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      125
+    ]
+  ],
+  "feature_importances": {
+    "operating_hours": 0.0018,
+    "load_percent": 0.007,
+    "temperature": 0.2719,
+    "vibration": 0.2801,
+    "vibration_freq": 0.1263,
+    "pressure": 0.0775,
+    "acoustic": 0.1549,
+    "rpm": 0.0806
+  },
+  "rul_mae_hours": 325.92,
+  "rul_r2_score": 0.5477
+}
